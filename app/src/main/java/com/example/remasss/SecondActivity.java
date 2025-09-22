@@ -32,6 +32,7 @@ public class SecondActivity extends AppCompatActivity {
         num2 = findViewById(R.id.num2);
         Multiply = findViewById(R.id.Multiply);
         Mul = findViewById(R.id.Mul);
+        //hujkhjkhjk
         Result = findViewById(R.id.Result);
         };
 

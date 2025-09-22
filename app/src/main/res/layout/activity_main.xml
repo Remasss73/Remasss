@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_remas"
+        android:textColor="#955050"
+        android:textColorLink="#E97D7D"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#682323"
+        android:onClick="onClickGo"
+        android:text="PRESS TO GO"
+        android:textSize="34sp"
+        tools:ignore="HardcodedText,OnClick,VisualLintButtonSize" />
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Enter your input"
+        android:inputType="text"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText,LabelFor,TouchTargetSizeCheck"
+        tools:text="Enter your input" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#BC3131"
+        android:onClick="onClickNext"
+        android:text="Next Screen"
+        android:textColorHint="#5B1F1F"
+        android:textColorLink="#662323"
+        android:textSize="34sp"
+        tools:ignore="VisualLintButtonSize" />
+
+</LinearLayout>

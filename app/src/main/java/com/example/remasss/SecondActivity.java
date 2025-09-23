@@ -29,12 +29,10 @@ public class SecondActivity extends AppCompatActivity {
     private MenuItem itemHistory;
 
 
-
-
-
     @SuppressLint("MissingInflatedId")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         num1 = findViewById(R.id.num1);
@@ -44,16 +42,15 @@ public class SecondActivity extends AppCompatActivity {
         Result = findViewById(R.id.Result);
     }
 
-    ;
 
-    public void onClickMul(View v) {
+    public void onClickMul(View v)
+    {
         String s1 = num1.getText().toString();
         String s2 = num2.getText().toString();
         Result.setText(s1);
         int n1 = Integer.parseInt(s1);
         int n2 = Integer.parseInt(s2);
         int res = n1 * n2;
-        ;
         Result.setText(String.valueOf(res));
     }
 
@@ -74,11 +71,16 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.itemHistory) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        if (item.getItemId() == R.id.itemHistory)
+        {
         }
-        if (item.getItemId() == R.id.itemSignOut) {
+        if (item.getItemId() == R.id.itemSignOut)
+        {
+            return true;
         }
+
         return true;
     }
 

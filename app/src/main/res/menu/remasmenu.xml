@@ -7,7 +7,7 @@
         android:title="Settings" />
     <item
         android:id="@+id/itemSignOut"
-        android:title="Item" />
+        android:title="SignOut" />
     <item
         android:id="@+id/itemHistory"
         android:icon="@android:drawable/ic_menu_recent_history"

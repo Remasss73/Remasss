@@ -24,7 +24,8 @@ private EditText et_Input;
     private MenuItem itemHistory;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         tv_output = findViewById(R.id.tvOutput);
@@ -42,18 +43,20 @@ private EditText et_Input;
         startActivity(i);
     }
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         getMenuInflater().inflate(R.menu.remasmenu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.itemHistory) {
+        if (item.getItemId() == R.id.itemHistory)
+        {
         }
-        if (item.getItemId() == R.id.itemSignOut) {
+        if (item.getItemId() == R.id.itemSignOut)
+        {
         }
         return true;
     }
-
 }

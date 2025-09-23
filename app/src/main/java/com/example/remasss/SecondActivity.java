@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -75,13 +76,13 @@ public class SecondActivity extends AppCompatActivity {
     {
         if (item.getItemId() == R.id.itemHistory)
         {
+            Toast.makeText(this,"I am SettingS", Toast.LENGTH_SHORT).show();
         }
         if (item.getItemId() == R.id.itemSignOut)
         {
-            return true;
+            Toast.makeText(this,"I am logOut" , Toast.LENGTH_SHORT).show();
         }
 
         return true;
     }
-
 }

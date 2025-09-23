@@ -2,6 +2,8 @@ package com.example.remasss;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,6 +19,10 @@ public class MainActivity extends AppCompatActivity {
 private TextView tv_output;
 private Button btn_Go;
 private EditText et_Input;
+    private MenuItem itemSettings;
+    private MenuItem itemSignOut;
+    private MenuItem itemHistory;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,4 +41,19 @@ private EditText et_Input;
         Intent i=new Intent(MainActivity.this, SecondActivity.class);
         startActivity(i);
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.remasmenu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.itemHistory) {
+        }
+        if (item.getItemId() == R.id.itemSignOut) {
+        }
+        return true;
+    }
+
 }
